@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YoungLA Navbar</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <!-- Banner Superior -->
+    <div class="top-banner">
+        FREE SHIPPING FOR ALL U.S. ORDERS OVER $75
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <!-- Menú Izquierdo -->
+            <div class="d-flex">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="forHim" role="button" data-bs-toggle="dropdown">FOR HIM</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Camisetas</a></li>
+                                <li><a class="dropdown-item" href="#">Pantalones</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="forHer" role="button" data-bs-toggle="dropdown">FOR HER</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Leggings</a></li>
+                                <li><a class="dropdown-item" href="#">Tops</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="newDrop" role="button" data-bs-toggle="dropdown">NEW DROP</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Novedades</a></li>
+                                <li><a class="dropdown-item" href="#">Exclusivos</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Logo en el centro -->
+            <div class="mx-auto">
+                <a class="navbar-brand" href="#">
+                    <img src="https://www.youngla.com/cdn/shop/files/spaced_logo_Black_32dec808-d736-4b71-87a2-b92272e92b0a.png?v=1615834240&width=520" 
+                         alt="YoungLA">
+                </a>
+            </div>
+
+            <!-- Sección de contacto e íconos a la derecha -->
+            <div class="d-flex align-items-center">
+                <span class="me-3">Questions? (818) 206-8764</span>
+                <div class="nav-icons">
+                    <i class="bi bi-person"></i>
+                    <i class="bi bi-search"></i>
+                    <i class="bi bi-bag"></i>
+                    <i class="bi bi-globe-americas"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Carrusel -->
+    <div id="carouselExample" class="carousel slide mt-0" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://www.youngla.com/cdn/shop/files/March_13th_Launch_-_DESKTOP1.jpg?v=1741887945&width=2000" class="d-block w-100" alt="Imagen 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.youngla.com/cdn/shop/files/Banner_1_4c7c7ffc-a2d1-449f-8392-384d7ecbc0e4.jpg?v=1741718086&width=2000" class="d-block w-100" alt="Imagen 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.youngla.com/cdn/shop/files/March_13th_Launch_-_DESKTOP2.jpg?v=1741887778&width=2000" class="d-block w-100" alt="Imagen 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

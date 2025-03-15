@@ -1,0 +1,36 @@
+.product-title{
+    text-align: center;
+    font-size: medium;
+    padding-top: 20px;
+}
+
+.product-price{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: grey;
+}
+
+.carousel-indicators img{
+    display: block;
+    font-size: 1rem;
+    width: 20px;
+    height: 20px;
+}
+
+.carousel-indicators{
+    position: unset;
+}
+
+.carousel-indicators button{
+    width: max-content!important;
+}
+
+.score i{
+    padding: 2px;
+}
+
+.reviews{
+    font-size: large;
+    font-weight: 400;
+}

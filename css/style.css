@@ -1,0 +1,50 @@
+/* Estilo del banner superior */
+.top-banner {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    padding: 5px;
+}
+
+/* Ajuste de la navbar */
+.navbar {
+    padding: 10px 0;
+}
+
+/* Centrar logo */
+.navbar-brand img {
+    max-height: 50px;
+    display: block;
+    margin: auto;
+}
+
+/* Estilos para los íconos y texto de contacto */
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Ajustes para los menús desplegables */
+.nav-item .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+/* Estilos del carrusel */
+.carousel {
+    margin-top: 20px;
+}
+
+.carousel-item img {
+    max-height: 700px;
+    object-fit:fill;
+}
