@@ -24,3 +24,11 @@ document.addEventListener("DOMContentLoaded", function () {
         ride: "carousel"
     });
 });
+
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+        let offcanvasEl = document.querySelector('.offcanvas');
+        let offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvasEl);
+        offcanvasInstance.hide();
+    });
+});
