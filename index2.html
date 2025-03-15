@@ -9,70 +9,101 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 </head>
 <body>
-
     <!-- Banner Superior -->
-    <div class="top-banner">
-        FREE SHIPPING FOR ALL U.S. ORDERS OVER $100
+     <div
+        class="row justify-content-center align-items-center g-2" id="b"
+     >
+        <div class="col-2 "></div>
+        <div class="col-8">
+            <div class="top-banner text-center bg-dark text-white py-2">
+            <p id="a"><strong>FREE SHIPPING FOR ALL U.S. ORDERS OVER $100</strong></p>
+        </div></div>
+        <div class="col-2"></div>
+     </div>
+     
+
+   <!-- Navbar -->
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+     <!-- Menú desplegable (Visible en pantallas grandes y alineado a la izquierda) -->
+     <div class="d-flex ms-auto d-none d-lg-flex align-items-center me-0">
+        <div class="dropdown">
+            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                FOR HIM
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Option 1</a></li>
+                <li><a class="dropdown-item" href="#">Option 2</a></li>
+            </ul>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                FOR HER
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Option 1</a></li>
+                <li><a class="dropdown-item" href="#">Option 2</a></li>
+            </ul>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                NEW DROP
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Option 1</a></li>
+                <li><a class="dropdown-item" href="#">Option 2</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <!-- Botón para abrir Sidebar -->
+        <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidebar" id="sidebarToggle">
+            <i class="bi bi-list"></i>
+        </button>
+        
+        <!-- Logo -->
+        <a class="navbar-brand mx-auto" href="#">
+            <img src="https://www.youngla.com/cdn/shop/files/spaced_logo_Black_32dec808-d736-4b71-87a2-b92272e92b0a.png?v=1615834240&width=520" alt="YoungLA" width="180">
+        </a>
+        
+       
+        
+        <!-- Iconos a la derecha -->
+        <div class="d-flex align-items-center">
+            <span class="me-3">Questions? (818) 206-8764</span>
+            <i class="bi bi-person me-2"></i>
+            <i class="bi bi-search me-2"></i>
+            <i class="bi bi-bag me-2"></i>
+            <i class="bi bi-globe-americas"></i>
+        </div>
+    </div>
+</nav>
+
+    <!-- Sidebar con Offcanvas -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSidebar">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav flex-column">
+                <li class="nav-item"><a class="nav-link" href="#">FOR HIM</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">FOR HER</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">NEW DROP</a></li>
+                <hr>
+                <li class="nav-item"><a class="nav-link" href="#">NEW DROP FOR HIM</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">NEW DROP FOR HER</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">ATTACK ON TITAN</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">GOLD'S GYM</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">YU-GI-OH!</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">RESTOCK FOR HIM</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">RESTOCK FOR HER</a></li>
+            </ul>
+        </div>
     </div>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <!-- Menú Izquierdo -->
-            <div class="d-flex">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="forHim" role="button" data-bs-toggle="dropdown">FOR HIM</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Camisetas</a></li>
-                                <li><a class="dropdown-item" href="#">Pantalones</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="forHer" role="button" data-bs-toggle="dropdown">FOR HER</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Leggings</a></li>
-                                <li><a class="dropdown-item" href="#">Tops</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="newDrop" role="button" data-bs-toggle="dropdown">NEW DROP</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Novedades</a></li>
-                                <li><a class="dropdown-item" href="#">Exclusivos</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Logo en el centro -->
-            <div class="mx-auto navbar-brand">
-                <a href="#">
-                    <img src="https://www.youngla.com/cdn/shop/files/spaced_logo_Black_32dec808-d736-4b71-87a2-b92272e92b0a.png?v=1615834240&width=520" 
-                         alt="YoungLA">
-                </a>
-            </div>
-            
-
-            <!-- Sección de contacto e íconos a la derecha -->
-            <div class="d-flex align-items-center">
-                <span class="me-3">Questions? (818) 206-8764</span>
-                <div class="nav-icons">
-                    <i class="bi bi-person"></i>
-                    <i class="bi bi-search"></i>
-                    <i class="bi bi-bag"></i>
-                    <i class="bi bi-globe-americas"></i>
-                </div>
-            </div>
-        </div>
-    </nav>
     <!-- Carrusel -->
-    <div id="carouselExample" class="carousel slide mt-0" data-bs-ride="carousel">
+    <div id="carouselExample" class="carousel slide mt-3" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="https://www.youngla.com/cdn/shop/files/March_13th_Launch_-_DESKTOP1.jpg?v=1741887945&width=2000" class="d-block w-100" alt="Imagen 1">
@@ -92,8 +123,6 @@
         </button>
     </div>
 
-    <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>

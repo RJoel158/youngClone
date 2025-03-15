@@ -74,4 +74,84 @@
     }
 }
 
+.offcanvas {
+    background-color: rgb(28, 28, 28);
+    color: white;
+    width: 250px;
+}
+.offcanvas-body{
+    background-color: rgb(28, 28, 28);
+}
+.offcanvas-header {
+    border-bottom: 1px solid rgb(255, 255, 255);
+    background-color: rgb(28, 28, 28);
+    color: white;
+}
 
+.nav-link {
+    color: white !important;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn-close {
+    filter: invert(1); /* Cambia el color del botón de cierre */
+}
+.offcanvas-start {
+    background-color: rgb(28, 28, 28); /* Aquí aplicamos el color RGB */
+}
+
+/* Alineación de los dropdowns a la izquierda en pantallas grandes */
+@media (min-width: 992px) {
+    .navbar-nav.me-auto {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .navbar-nav .nav-item {
+        margin-right: 15px;
+    }
+}
+/* Ocultar dropdowns en pantallas pequeñas */
+@media (max-width: 992px) { 
+    .d-lg-flex {
+        display: none !important;
+    }
+    #sidebarToggle {
+        display: block !important; /* Mostrar el botón de las tres rayas */
+    }
+}
+
+/* Mostrar dropdowns en pantallas grandes */
+@media (min-width: 993px) {
+    #sidebarToggle {
+        display: none !important; /* Ocultar el botón de las tres rayas */
+    }
+    .d-lg-flex {
+        display: flex !important;
+        justify-content: flex-start; /* Alineación a la izquierda */
+        gap: 15px; /* Espacio entre los dropdowns */
+    }
+}
+#b{
+    background-color:rgb(37, 37, 41) ;
+}
+#a{
+    text-align: center;
+}
+/* Estilo de los dropdowns */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
