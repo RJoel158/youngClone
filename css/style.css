@@ -48,3 +48,30 @@
     max-height: 700px;
     object-fit:fill;
 }
+.navbar-brand img {
+    max-width: 200px; /* Tamaño máximo en pantallas grandes */
+    height: auto;
+    transition: all 0.3s ease-in-out;
+    display: block;
+    margin: 0 auto; /* Centrar el logo */
+}
+
+@media (max-width: 992px) { /* Tablets y pantallas medianas */
+    .navbar-brand img {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 768px) { /* Dispositivos móviles */
+    .navbar-brand img {
+        max-width: 120px;
+    }
+}
+
+@media (max-width: 576px) { /* Teléfonos más pequeños */
+    .navbar-brand img {
+        max-width: 100px;
+    }
+}
+
+
