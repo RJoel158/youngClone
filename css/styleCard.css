@@ -34,3 +34,21 @@
     font-size: large;
     font-weight: 400;
 }
+
+.tab-menu {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px;
+    display: inline-block;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+.tab-menu.active {
+    text-decoration: underline;
+    color: #000;
+}
+
+.carousel-inner img {
+    max-width: 95%; /* Ajusta el valor de 80% al tamaño que desees */
+    height: auto;
+    margin: 0 auto; /* Para centrar la imagen */
+}

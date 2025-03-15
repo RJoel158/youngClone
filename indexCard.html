@@ -17,7 +17,7 @@
             crossorigin="anonymous"
         />
 
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/styleCard.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     </head>
 
@@ -26,8 +26,17 @@
             <!-- place navbar here -->
         </header>
         <main>
+            <div class="text-center">
+                <span class="tab-menu active" id="for-him">FOR HIM</span>
+                <span class="tab-menu" id="for-her">FOR HER</span>
+            </div>
+
+            <div id="product-container" class="row mt-4">
+                
+            </div>
+
             <div class="container-fluid">
-                <div class="d-flex justify-content-around">
+                <div class="d-flex justify-content-between">
                     <div class="col-3">
                         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
@@ -79,7 +88,7 @@
                     </div>
 
                     <div class="col-3">
-                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <img src="https://www.youngla.com/cdn/shop/files/2009_black-wash_001_03_13_floor.jpg?v=1741806365&width=500" class="d-block w-100" alt="...">
@@ -98,7 +107,7 @@
                               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                               <span class="visually-hidden">Previous</span>
                             </button> -->
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
                             </button>
@@ -109,10 +118,10 @@
     
                             <!-- colors -->
                             <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsJCQcJCQcJCQkJCwkJCQkJCQsJCwsMCwsLDA0QDBEODQ4MEhkSJRodJR0ZHxwpKRYlNzU2GioyPi0pMBk7IRP/2wBDAQcICAsJCxULCxUsHRkdLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCz/wAARCAC5ASoDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAECBQb/xAApEAEAAgECAwgCAwAAAAAAAAAAAREhMUFRkfACAzJhcbHR4XKBM1Kh/8QAGAEBAQADAAAAAAAAAAAAAAAAAAECBgf/xAAYEQEBAQEBAAAAAAAAAAAAAAAAARECIf/aAAwDAQACEQMRAD8A8QA152ID0MgBkyBYAAAFiAKAAEICiLyABAUTKgCKACAtgAFgABgAADQsAF584ReaLERRUIBAUAEUAAAEVAFADRFAQFBBeIAigGhYAFgABYAAIsCAoEggKCNsrjy5ixAlBBQABAUEBUFBBQBFALRQARQBAFJAEUABFAEUAAAABFARQAXCGOrAkAAEAMqAhlQANwBFQFwYRaAABFAARQRQsAAAQAUAAIAMgCZUQF5mQsEaxwZauBYiKgigAIqAqKAIqAoigiiALsgAqKBsIAoEACKCLsgAqKAioCiACgAAAtdWy1UBE4ggoqKIIqAqKAWgAokKAeaKBqgoIqKCKAAAIoAgoBSKgCooAigigCKAI1nzReYRA4oCgAAgCooCKgKAAgACgFEooIqKAAAH2AIoCKAIKAFIoIKAAAKhnyAkJAEVAVFAANQEFADmAilgB9CAClggoCKICgAQACKACKgBKoAoAgKAtQhzCG8gAgoBKCgAgKIAoAIqKCKACKACAKgAoICooCGVAQABQsAQAUAFtNV/YRAnf1ARUAFRQQFBFABABUVNwBQBFQBRAVBQAQFABFKAQFAQAVBQMIKAcjVbniLEkJ3QRUAFBAAUARcgIKAIAoACKgCouAEUBFtFARQAABFwgC6ooIphAUAEa60RetQiTBTfb8fe/n2/dBZ6zRSrshjIqTp+59lQFjrmfaCB1/pvChQsoGCKRsALO67C4yL8T7kCIE+JZBlV+TgCUKIuJQs/KbyIDUIpIhSn2i4hSwSolFLsqGMiqGM0tT/XtLx9Ph0u6/j7r8Ox7QsY9XH/2Q==" alt=""></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"><img src="https://th.bing.com/th/id/OIP.OmmItIgNJC1N9kFM64kYYAHaEK?w=287&h=180&c=7&r=0&o=5&pid=1.7" alt=""></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"><img src="https://th.bing.com/th/id/OIP.D2oVGGkZSO9GY2lAF1AT8AHaEK?w=310&h=180&c=7&r=0&o=5&pid=1.7" alt=""></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"><img src="https://th.bing.com/th/id/OIP.irW1BG9vCB9nKCJAJXde2QHaHa?w=187&h=187&c=7&r=0&o=5&pid=1.7" alt=""></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsJCQcJCQcJCQkJCwkJCQkJCQsJCwsMCwsLDA0QDBEODQ4MEhkSJRodJR0ZHxwpKRYlNzU2GioyPi0pMBk7IRP/2wBDAQcICAsJCxULCxUsHRkdLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCz/wAARCAC5ASoDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAECBQb/xAApEAEAAgECAwgCAwAAAAAAAAAAAREhMUFRkfACAzJhcbHR4XKBM1Kh/8QAGAEBAQADAAAAAAAAAAAAAAAAAAECBgf/xAAYEQEBAQEBAAAAAAAAAAAAAAAAARECIf/aAAwDAQACEQMRAD8A8QA152ID0MgBkyBYAAAFiAKAAEICiLyABAUTKgCKACAtgAFgABgAADQsAF584ReaLERRUIBAUAEUAAAEVAFADRFAQFBBeIAigGhYAFgABYAAIsCAoEggKCNsrjy5ixAlBBQABAUEBUFBBQBFALRQARQBAFJAEUABFAEUAAAABFARQAXCGOrAkAAEAMqAhlQANwBFQFwYRaAABFAARQRQsAAAQAUAAIAMgCZUQF5mQsEaxwZauBYiKgigAIqAqKAIqAoigiiALsgAqKBsIAoEACKCLsgAqKAioCiACgAAAtdWy1UBE4ggoqKIIqAqKAWgAokKAeaKBqgoIqKCKAAAIoAgoBSKgCooAigigCKAI1nzReYRA4oCgAAgCooCKgKAAgACgFEooIqKAAAH2AIoCKAIKAFIoIKAAAKhnyAkJAEVAVFAANQEFADmAilgB9CAClggoCKICgAQACKACKgBKoAoAgKAtQhzCG8gAgoBKCgAgKIAoAIqKCKACKACAKgAoICooCGVAQABQsAQAUAFtNV/YRAnf1ARUAFRQQFBFABABUVNwBQBFQBRAVBQAQFABFKAQFAQAVBQMIKAcjVbniLEkJ3QRUAFBAAUARcgIKAIAoACKgCouAEUBFtFARQAABFwgC6ooIphAUAEa60RetQiTBTfb8fe/n2/dBZ6zRSrshjIqTp+59lQFjrmfaCB1/pvChQsoGCKRsALO67C4yL8T7kCIE+JZBlV+TgCUKIuJQs/KbyIDUIpIhSn2i4hSwSolFLsqGMiqGM0tT/XtLx9Ph0u6/j7r8Ox7QsY9XH/2Q==" alt=""></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1" aria-label="Slide 2"><img src="https://th.bing.com/th/id/OIP.OmmItIgNJC1N9kFM64kYYAHaEK?w=287&h=180&c=7&r=0&o=5&pid=1.7" alt=""></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2" aria-label="Slide 3"><img src="https://th.bing.com/th/id/OIP.D2oVGGkZSO9GY2lAF1AT8AHaEK?w=310&h=180&c=7&r=0&o=5&pid=1.7" alt=""></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="3" aria-label="Slide 4"><img src="https://th.bing.com/th/id/OIP.irW1BG9vCB9nKCJAJXde2QHaHa?w=187&h=187&c=7&r=0&o=5&pid=1.7" alt=""></button>
                             </div>
     
                             <div class="score d-flex justify-content-center align-items-center">
@@ -128,7 +137,7 @@
     
                     </div>
                     <div class="col-3">
-                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <img src="https://www.youngla.com/cdn/shop/files/2009_black-wash_001_03_13_floor.jpg?v=1741806365&width=500" class="d-block w-100" alt="...">
@@ -147,7 +156,7 @@
                               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                               <span class="visually-hidden">Previous</span>
                             </button> -->
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
                             </button>
@@ -158,10 +167,10 @@
     
                             <!-- colors -->
                             <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsJCQcJCQcJCQkJCwkJCQkJCQsJCwsMCwsLDA0QDBEODQ4MEhkSJRodJR0ZHxwpKRYlNzU2GioyPi0pMBk7IRP/2wBDAQcICAsJCxULCxUsHRkdLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCz/wAARCAC5ASoDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAECBQb/xAApEAEAAgECAwgCAwAAAAAAAAAAAREhMUFRkfACAzJhcbHR4XKBM1Kh/8QAGAEBAQADAAAAAAAAAAAAAAAAAAECBgf/xAAYEQEBAQEBAAAAAAAAAAAAAAAAARECIf/aAAwDAQACEQMRAD8A8QA152ID0MgBkyBYAAAFiAKAAEICiLyABAUTKgCKACAtgAFgABgAADQsAF584ReaLERRUIBAUAEUAAAEVAFADRFAQFBBeIAigGhYAFgABYAAIsCAoEggKCNsrjy5ixAlBBQABAUEBUFBBQBFALRQARQBAFJAEUABFAEUAAAABFARQAXCGOrAkAAEAMqAhlQANwBFQFwYRaAABFAARQRQsAAAQAUAAIAMgCZUQF5mQsEaxwZauBYiKgigAIqAqKAIqAoigiiALsgAqKBsIAoEACKCLsgAqKAioCiACgAAAtdWy1UBE4ggoqKIIqAqKAWgAokKAeaKBqgoIqKCKAAAIoAgoBSKgCooAigigCKAI1nzReYRA4oCgAAgCooCKgKAAgACgFEooIqKAAAH2AIoCKAIKAFIoIKAAAKhnyAkJAEVAVFAANQEFADmAilgB9CAClggoCKICgAQACKACKgBKoAoAgKAtQhzCG8gAgoBKCgAgKIAoAIqKCKACKACAKgAoICooCGVAQABQsAQAUAFtNV/YRAnf1ARUAFRQQFBFABABUVNwBQBFQBRAVBQAQFABFKAQFAQAVBQMIKAcjVbniLEkJ3QRUAFBAAUARcgIKAIAoACKgCouAEUBFtFARQAABFwgC6ooIphAUAEa60RetQiTBTfb8fe/n2/dBZ6zRSrshjIqTp+59lQFjrmfaCB1/pvChQsoGCKRsALO67C4yL8T7kCIE+JZBlV+TgCUKIuJQs/KbyIDUIpIhSn2i4hSwSolFLsqGMiqGM0tT/XtLx9Ph0u6/j7r8Ox7QsY9XH/2Q==" alt=""></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"><img src="https://th.bing.com/th/id/OIP.OmmItIgNJC1N9kFM64kYYAHaEK?w=287&h=180&c=7&r=0&o=5&pid=1.7" alt=""></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"><img src="https://th.bing.com/th/id/OIP.D2oVGGkZSO9GY2lAF1AT8AHaEK?w=310&h=180&c=7&r=0&o=5&pid=1.7" alt=""></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"><img src="https://th.bing.com/th/id/OIP.irW1BG9vCB9nKCJAJXde2QHaHa?w=187&h=187&c=7&r=0&o=5&pid=1.7" alt=""></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsJCQcJCQcJCQkJCwkJCQkJCQsJCwsMCwsLDA0QDBEODQ4MEhkSJRodJR0ZHxwpKRYlNzU2GioyPi0pMBk7IRP/2wBDAQcICAsJCxULCxUsHRkdLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCz/wAARCAC5ASoDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAECBQb/xAApEAEAAgECAwgCAwAAAAAAAAAAAREhMUFRkfACAzJhcbHR4XKBM1Kh/8QAGAEBAQADAAAAAAAAAAAAAAAAAAECBgf/xAAYEQEBAQEBAAAAAAAAAAAAAAAAARECIf/aAAwDAQACEQMRAD8A8QA152ID0MgBkyBYAAAFiAKAAEICiLyABAUTKgCKACAtgAFgABgAADQsAF584ReaLERRUIBAUAEUAAAEVAFADRFAQFBBeIAigGhYAFgABYAAIsCAoEggKCNsrjy5ixAlBBQABAUEBUFBBQBFALRQARQBAFJAEUABFAEUAAAABFARQAXCGOrAkAAEAMqAhlQANwBFQFwYRaAABFAARQRQsAAAQAUAAIAMgCZUQF5mQsEaxwZauBYiKgigAIqAqKAIqAoigiiALsgAqKBsIAoEACKCLsgAqKAioCiACgAAAtdWy1UBE4ggoqKIIqAqKAWgAokKAeaKBqgoIqKCKAAAIoAgoBSKgCooAigigCKAI1nzReYRA4oCgAAgCooCKgKAAgACgFEooIqKAAAH2AIoCKAIKAFIoIKAAAKhnyAkJAEVAVFAANQEFADmAilgB9CAClggoCKICgAQACKACKgBKoAoAgKAtQhzCG8gAgoBKCgAgKIAoAIqKCKACKACAKgAoICooCGVAQABQsAQAUAFtNV/YRAnf1ARUAFRQQFBFABABUVNwBQBFQBRAVBQAQFABFKAQFAQAVBQMIKAcjVbniLEkJ3QRUAFBAAUARcgIKAIAoACKgCouAEUBFtFARQAABFwgC6ooIphAUAEa60RetQiTBTfb8fe/n2/dBZ6zRSrshjIqTp+59lQFjrmfaCB1/pvChQsoGCKRsALO67C4yL8T7kCIE+JZBlV+TgCUKIuJQs/KbyIDUIpIhSn2i4hSwSolFLsqGMiqGM0tT/XtLx9Ph0u6/j7r8Ox7QsY9XH/2Q==" alt=""></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"><img src="https://th.bing.com/th/id/OIP.OmmItIgNJC1N9kFM64kYYAHaEK?w=287&h=180&c=7&r=0&o=5&pid=1.7" alt=""></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"><img src="https://th.bing.com/th/id/OIP.D2oVGGkZSO9GY2lAF1AT8AHaEK?w=310&h=180&c=7&r=0&o=5&pid=1.7" alt=""></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="3" aria-label="Slide 4"><img src="https://th.bing.com/th/id/OIP.irW1BG9vCB9nKCJAJXde2QHaHa?w=187&h=187&c=7&r=0&o=5&pid=1.7" alt=""></button>
                             </div>
     
                             <div class="score d-flex justify-content-center align-items-center">
@@ -177,7 +186,53 @@
     
                     </div>
 
-                    <!-- CAMBIAR EL TAMAÑO DE LOS CAROUSEL ITEMS PARA QUE ENTRE 4 EN LA FILA -->
+                    <div class="col-3">
+                        <div id="carouselExampleIndicators3" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="https://www.youngla.com/cdn/shop/files/2009_black-wash_001_03_13_floor.jpg?v=1741806365&width=500" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://www.youngla.com/cdn/shop/files/2009_charcoal-wash_001_03_13_floor.jpg?v=1741806365&width=500" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://www.youngla.com/cdn/shop/files/2009_hunter-green-wash_001_03_13_floor.jpg?v=1741806365&width=500" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://www.youngla.com/cdn/shop/files/2009_navy-wash_001_03_13_floor.jpg?v=1741806365&width=500" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button> -->
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="product-features">
+                            <h1 class="product-title">2009 - Faith Sweats</h1>
+                            <h2 class="product-price">$ 55.00</h2>
+    
+                            <!-- colors -->
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsJCQcJCQcJCQkJCwkJCQkJCQsJCwsMCwsLDA0QDBEODQ4MEhkSJRodJR0ZHxwpKRYlNzU2GioyPi0pMBk7IRP/2wBDAQcICAsJCxULCxUsHRkdLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCz/wAARCAC5ASoDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAECBQb/xAApEAEAAgECAwgCAwAAAAAAAAAAAREhMUFRkfACAzJhcbHR4XKBM1Kh/8QAGAEBAQADAAAAAAAAAAAAAAAAAAECBgf/xAAYEQEBAQEBAAAAAAAAAAAAAAAAARECIf/aAAwDAQACEQMRAD8A8QA152ID0MgBkyBYAAAFiAKAAEICiLyABAUTKgCKACAtgAFgABgAADQsAF584ReaLERRUIBAUAEUAAAEVAFADRFAQFBBeIAigGhYAFgABYAAIsCAoEggKCNsrjy5ixAlBBQABAUEBUFBBQBFALRQARQBAFJAEUABFAEUAAAABFARQAXCGOrAkAAEAMqAhlQANwBFQFwYRaAABFAARQRQsAAAQAUAAIAMgCZUQF5mQsEaxwZauBYiKgigAIqAqKAIqAoigiiALsgAqKBsIAoEACKCLsgAqKAioCiACgAAAtdWy1UBE4ggoqKIIqAqKAWgAokKAeaKBqgoIqKCKAAAIoAgoBSKgCooAigigCKAI1nzReYRA4oCgAAgCooCKgKAAgACgFEooIqKAAAH2AIoCKAIKAFIoIKAAAKhnyAkJAEVAVFAANQEFADmAilgB9CAClggoCKICgAQACKACKgBKoAoAgKAtQhzCG8gAgoBKCgAgKIAoAIqKCKACKACAKgAoICooCGVAQABQsAQAUAFtNV/YRAnf1ARUAFRQQFBFABABUVNwBQBFQBRAVBQAQFABFKAQFAQAVBQMIKAcjVbniLEkJ3QRUAFBAAUARcgIKAIAoACKgCouAEUBFtFARQAABFwgC6ooIphAUAEa60RetQiTBTfb8fe/n2/dBZ6zRSrshjIqTp+59lQFjrmfaCB1/pvChQsoGCKRsALO67C4yL8T7kCIE+JZBlV+TgCUKIuJQs/KbyIDUIpIhSn2i4hSwSolFLsqGMiqGM0tT/XtLx9Ph0u6/j7r8Ox7QsY9XH/2Q==" alt=""></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1" aria-label="Slide 2"><img src="https://th.bing.com/th/id/OIP.OmmItIgNJC1N9kFM64kYYAHaEK?w=287&h=180&c=7&r=0&o=5&pid=1.7" alt=""></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="2" aria-label="Slide 3"><img src="https://th.bing.com/th/id/OIP.D2oVGGkZSO9GY2lAF1AT8AHaEK?w=310&h=180&c=7&r=0&o=5&pid=1.7" alt=""></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="3" aria-label="Slide 4"><img src="https://th.bing.com/th/id/OIP.irW1BG9vCB9nKCJAJXde2QHaHa?w=187&h=187&c=7&r=0&o=5&pid=1.7" alt=""></button>
+                            </div>
+    
+                            <div class="score d-flex justify-content-center align-items-center">
+                                <i class="bi bi-star-fill" style="font-size: 1rem; color: rgb(0, 0, 0);"></i>
+                                <i class="bi bi-star-fill" style="font-size: 1rem; color: rgb(0, 0, 0);"></i>
+                                <i class="bi bi-star-fill" style="font-size: 1rem; color: rgb(0, 0, 0);"></i>
+                                <i class="bi bi-star-fill" style="font-size: 1rem; color: rgb(0, 0, 0);"></i>
+                                <i class="bi bi-star-fill" style="font-size: 1rem; color: rgb(0, 0, 0);"></i>
+                                <h1 class="reviews mb-0 ms-2" style="font-size: 1rem;">(1)</h1>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -197,5 +252,7 @@
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
             crossorigin="anonymous"
         ></script>
+
+        <script src="js/scriptCard.js"></script>
     </body>
 </html>
