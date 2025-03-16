@@ -12,6 +12,9 @@
 .navbar {
     padding: 10px 0;
 }
+.cards-container {
+    transform: translateX(-25px); /* Mueve los cards a la izquierda */
+}
 
 /* Centrar logo */
 .navbar-brand img {
