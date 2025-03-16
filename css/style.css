@@ -337,3 +337,34 @@ body {
     color: black;
     border: 2px solid black;
 }
+.container {
+    max-width: 900px;
+}
+
+/* Botones de color */
+.color-options {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.color-btn {
+    width: 40px;
+    height: 40px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, border 0.2s;
+}
+
+.color-btn:hover {
+    transform: scale(1.1);
+    border: 2px solid #333;
+}
+
+.yellow {
+    background-color: #FFD700;
+}
+
+.black {
+    background-color: black;
+}

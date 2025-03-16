@@ -13,3 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
 function changeImage(imageSrc) {
     document.querySelector('.main-image').src = imageSrc;
 }
+function changeImage(imageSrc) {
+    document.getElementById('mainImage').src = imageSrc;
+}
