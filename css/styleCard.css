@@ -33,6 +33,11 @@
     height: 20px;
 }
 
+.card-img-top{
+    object-fit: cover;
+    height: 600px;
+}
+
 .carousel-indicators{
     position: unset;
 }
@@ -99,4 +104,118 @@
     font-size: 0.7rem;
     color: black;
     padding: 0;
+}
+
+.card {
+    border-radius: 0;
+}
+
+.card img{
+    border-radius: 0;
+}
+
+.card-img-container {
+    position: relative;
+}
+
+.card-title {
+    position: absolute;
+    top: 80%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    width: 150px;
+    text-align: left;
+}
+
+.card-btn {
+    position: absolute;
+    bottom: 40px; /* Distancia desde el borde inferior de la imagen */
+    left: 30%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 1); /* Fondo oscuro con algo de transparencia */
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+.follow-text{
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0px;
+}
+
+.card-gallery-item {
+    position: relative;
+    overflow: hidden; /* Evita que el overlay sobresalga */
+}
+
+.card-gallery-item img {
+    display: block;
+    transition: 0.3s ease-in-out;
+    object-fit: cover;
+
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0); /* Inicialmente transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Oculto por defecto */
+    transition: background 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.item-text {
+    color: white;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px); /* Baja ligeramente el texto */
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    position: relative;
+    font-weight: 500;
+}
+
+.item-text::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background-color: white;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+}
+
+/* Efecto al pasar el mouse */
+.card-gallery-item:hover .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}
+
+.card-gallery-item:hover .item-text {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card-gallery-item:hover .item-text::after {
+    width: 80%;
 }
