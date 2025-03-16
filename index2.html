@@ -6,103 +6,121 @@
     <title>YoungLA</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/styleCard.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        /* Botón de Sidebar a la izquierda y negro */
+        .btn-sidebar {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            background-color: black;
+            color: white;
+            border-radius: 50%;
+            border: none;
+            z-index: 1050;
+            display: none; /* Oculto por defecto en pantallas grandes */
+        }
+
+        /* Mostrar el botón solo en pantallas pequeñas */
+        @media (max-width: 991px) {
+            .btn-sidebar {
+                display: block;
+            }
+        }
+
+        /* Estilo adicional para el sidebar */
+        .offcanvas {
+            width: 250px;
+        }
+    </style>
 </head>
 <body>
-  <header>
-      <!-- Banner Superior -->
-      <div
-      class="row justify-content-center align-items-center g-2" id="b"
-   >
-      <div class="col-2 "></div>
-      <div class="col-8">
-          <div class="top-banner text-center bg-dark text-white py-2">
-          <p id="a"><strong>FREE SHIPPING FOR ALL U.S. ORDERS OVER $100</strong></p>
-      </div></div>
-      <div class="col-2"></div>
-   </div>
-   
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-   <!-- Menú desplegable (Visible en pantallas grandes y alineado a la izquierda) -->
-   <div class="d-flex ms-auto d-none d-lg-flex align-items-center me-0 " >
-      <div class="dropdown">
-          <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-              <strong>FOR HIM</strong>
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Option 1</a></li>
-              <li><a class="dropdown-item" href="#">Option 2</a></li>
-          </ul>
-      </div>
-      <div class="dropdown">
-          <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-              <strong>FOR HER</strong>
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Option 1</a></li>
-              <li><a class="dropdown-item" href="#">Option 2</a></li>
-          </ul>
-      </div>
-      <div class="dropdown">
-          <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-              <strong>NEW DROP</strong>
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Option 1</a></li>
-              <li><a class="dropdown-item" href="#">Option 2</a></li>
-          </ul>
-      </div>
-  </div>
-  <div class="container-fluid">
-      <!-- Botón para abrir Sidebar -->
-      <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidebar" id="sidebarToggle">
-          <i class="bi bi-list"></i>
-      </button>
-      
-      <!-- Logo -->
-      <a class="navbar-brand mx-auto" href="#">
-          <img src="https://www.youngla.com/cdn/shop/files/spaced_logo_Black_32dec808-d736-4b71-87a2-b92272e92b0a.png?v=1615834240&width=520" alt="YoungLA" width="180">
-      </a>
-      
-     
-      
-      <!-- Iconos a la derecha -->
-      <div class="d-flex align-items-center">
-          <span class="me-3">Questions? (818) 206-8764</span>
-          <i class="bi bi-person me-2"></i>
-          <i class="bi bi-search me-2"></i>
-          <i class="bi bi-bag me-2"></i>
-          <i class="bi bi-globe-americas"></i>
-      </div>
-  </div>
-</nav>
+    <header>
+        <!-- Banner Superior -->
+        <div class="row justify-content-center align-items-center g-2" id="b">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <div class="top-banner text-center bg-dark text-white py-2">
+                    <p id="a"><strong>FREE SHIPPING FOR ALL U.S. ORDERS OVER $100</strong></p>
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
 
-  <!-- Sidebar con Offcanvas -->
-  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasSidebar">
-      <div class="offcanvas-header">
-          <h5 class="offcanvas-title">Menu</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-      </div>
-      <div class="offcanvas-body">
-          <ul class="nav flex-column">
-              <li class="nav-item"><a class="nav-link" href="#">FOR HIM</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">FOR HER</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">NEW DROP</a></li>
-              <hr>
-              <li class="nav-item"><a class="nav-link" href="#">NEW DROP FOR HIM</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">NEW DROP FOR HER</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">ATTACK ON TITAN</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">GOLD'S GYM</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">YU-GI-OH!</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">RESTOCK FOR HIM</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">RESTOCK FOR HER</a></li>
-          </ul>
-      </div>
-  </div>
-  </header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="d-flex ms-auto d-none d-lg-flex align-items-center me-0">
+                <!-- Menú desplegable -->
+                <div class="dropdown">
+                    <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <strong>FOR HIM</strong>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <strong>FOR HER</strong>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <strong>NEW DROP</strong>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Option 1</a></li>
+                        <li><a class="dropdown-item" href="#">Option 2</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand mx-auto" href="#">
+                    <img src="https://www.youngla.com/cdn/shop/files/spaced_logo_Black_32dec808-d736-4b71-87a2-b92272e92b0a.png?v=1615834240&width=520" alt="YoungLA" width="180">
+                </a>
+
+                <!-- Iconos a la derecha -->
+                <div class="d-flex align-items-center">
+                    <span class="me-3">Questions? (818) 206-8764</span>
+                    <i class="bi bi-person me-2"></i>
+                    <i class="bi bi-search me-2"></i>
+                    <i class="bi bi-bag me-2"></i>
+                    <i class="bi bi-globe-americas"></i>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Sidebar -->
+        <div class="offcanvas offcanvas-start bg-light" tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="sidebarLabel">Menú</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link" href="#">FOR HIM</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">FOR HER</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">NEW DROP</a></li>
+                    <hr>
+                    <li class="nav-item"><a class="nav-link" href="#">NEW DROP FOR HIM</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">NEW DROP FOR HER</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">ATTACK ON TITAN</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">GOLD'S GYM</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">YU-GI-OH!</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">RESTOCK FOR HIM</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">RESTOCK FOR HER</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
   <main>      
     <!-- Carrusel -->
     <div id="carouselExample1" class="carrousel-container  slide mt-1" data-bs-ride="carousel">
@@ -364,13 +382,17 @@
         </div>
     </div>
 </footer>
+<button class="btn-sidebar" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar">
+    <i class="bi bi-layout-text-sidebar-reverse"></i>
+</button>
 
-<script src="js/script.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/details.js"></script>
+<script src="js/script.js"></script>
 </body>
 
 </html>
