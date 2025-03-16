@@ -36,6 +36,7 @@
 .card-img-top{
     object-fit: cover;
     height: 600px;
+    width: 100%;
 }
 
 .carousel-indicators{
@@ -115,7 +116,7 @@
 }
 
 .card-img-container {
-    position: relative;
+    position:relative;
 }
 
 .card-title {
