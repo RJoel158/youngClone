@@ -1,12 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    letter-spacing: 2px; /* Ajusta el valor según el espacio que desees */
+}
+
 .product-title{
+    font-family: "Montserrat", sans-serif;
+    font-style:normal;
+    font-weight: 500;
+
     text-align: center;
-    font-size: medium;
+    font-size: 10px;
+    text-transform: uppercase;
     padding-top: 20px;
 }
 
 .product-price{
+    font-family: "Montserrat", sans-serif;
+    font-style:normal;
+    font-weight: 500;
+
     text-align: center;
-    font-size: 15px;
+    font-size: 10px;
     font-weight: 500;
     color: grey;
 }
@@ -31,20 +46,28 @@
 }
 
 .reviews{
-    font-size: large;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+
+    font-size: small;
     font-weight: 400;
 }
 
 
 .tab-menu {
     cursor: pointer;
-    font-weight: bold;
+    font-weight: normal;
     padding: 10px;
     display: inline-block;
     transition: color 0.3s, text-decoration 0.3s;
 }
 .tab-menu.active {
+    font-family: "Montserrat", sans-serif;
+    font-style:normal;
+    font-weight: 500;
+
     text-decoration: underline;
+    text-decoration-thickness: 0.5px; /* Ajusta el valor según el grosor que desees */
     color: #000;
 }
 
@@ -52,4 +75,28 @@
     max-width: 95%; /* Ajusta el valor de 80% al tamaño que desees */
     height: auto;
     margin: 0 auto; /* Para centrar la imagen */
+}
+
+.all-for-him-button{
+    font-family: "Montserrat", sans-serif;
+    font-style:normal;
+    font-weight: 500;
+
+    background-color: black;
+    color: white;
+    border: 0;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    font-size: 11px;
+    margin-bottom: 50px;
+}
+
+.score > i{
+    font-size: 0.7rem;
+    color: black;
+    padding: 0;
 }
