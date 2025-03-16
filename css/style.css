@@ -43,11 +43,29 @@
 /* Estilos del carrusel */
 .carousel {
     margin-top: 20px;
+    object-fit: fill;
+    
 }
-
+/* Estilo para los cards */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+  }
+  
+  .card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
 .carousel-item img {
-    max-height: 700px;
-    object-fit:fill;
+    max-height: 900px;
+    object-fit:cover;
 }
 .navbar-brand img {
     max-width: 200px; /* Tamaño máximo en pantallas grandes */
@@ -62,7 +80,11 @@
         max-width: 150px;
     }
 }
-
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
 @media (max-width: 768px) { /* Dispositivos móviles */
     .navbar-brand img {
         max-width: 120px;
@@ -278,7 +300,7 @@ body {
 }
 
 .carousel-inner img {
-    border-radius: 10px;
+    border-radius: 0px;
 }
 
 body {

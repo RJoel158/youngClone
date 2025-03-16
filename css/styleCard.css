@@ -72,7 +72,7 @@
 }
 
 .carousel-inner img {
-    max-width: 95%; /* Ajusta el valor de 80% al tamaño que desees */
+    max-width: 90%; /* Ajusta el valor de 80% al tamaño que desees */
     height: auto;
     margin: 0 auto; /* Para centrar la imagen */
 }
