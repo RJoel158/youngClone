@@ -105,7 +105,7 @@
 </header>
 <body>
     <main>
-        <div class="container mt-1">
+        <div class="container mt-1 align-items-center">
             <div class="row">
                 <!-- Carrusel de imágenes -->
                 <div class="col-md-6 mb-5">
@@ -143,8 +143,22 @@
                     <p><strong>Peso del tejido:</strong> 460 GSM.</p>
                     <p><strong>Fit:</strong> Oversized.</p>
                     <p><strong>Modelo:</strong> 185lb, altura: 5'9", usa talla L.</p>
+                    <!-- Botones de color -->
+                    <div class="color-options">
+                        <button class="color-btn yellow" onclick="changeImage('yellow.jpg')"></button>
+                        <button class="color-btn black" onclick="changeImage('black.jpg')"></button>
+                    </div>
+                    <!-- Botones de talla -->
+                <div class="size-options mb-3">
+                    <button class="size-btn" onclick="selectSize(this)">S</button>
+                    <button class="size-btn" onclick="selectSize(this)">M</button>
+                    <button class="size-btn" onclick="selectSize(this)">L</button>
+                    <button class="size-btn" onclick="selectSize(this)">XL</button>
+                    <button class="size-btn" onclick="selectSize(this)">XXL</button>
+                </div>
                     <button type="button" class="add-to-cart">AÑADIR AL CARRITO</button>
                 </div>
+               
             </div>
         </div>
     </main>
