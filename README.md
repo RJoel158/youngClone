@@ -1,1 +1,10 @@
-# HOLA
+# PRIMER EXAMEN WEB II
+  INTEGRANTES: PANTOJA EDUARDO
+               SAAVEDRA JOEL
+               
+  TECNOLOGIAS: HTML 5 
+               CSS 3
+               JAVA SCRIPT
+               BOOTSTRAP 5
+
+DALE LIKE  SUSCRIBETE 
