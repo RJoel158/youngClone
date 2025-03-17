@@ -10,16 +10,16 @@ const productContainer = document.getElementById("product-container");
                         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="https://www.youngla.com/cdn/shop/files/5024_black-wash_0012_03_13_deek_ecomm_2.jpg?v=1741805257&width=600" class="d-block w-100" alt="...">
+                                    <a href="details.html"><img src="https://www.youngla.com/cdn/shop/files/5024_black-wash_0012_03_13_deek_ecomm_2.jpg?v=1741805257&width=600" class="d-block w-100" alt="..."></a>
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="https://www.youngla.com/cdn/shop/files/5024_olive-wash_0017_03_13_deek_ecomm.jpg?v=1741806599&width=600" class="d-block w-100" alt="...">
+                                    <a href="details.html"><img src="https://www.youngla.com/cdn/shop/files/5024_olive-wash_0017_03_13_deek_ecomm.jpg?v=1741806599&width=600" class="d-block w-100" alt="..."></a>
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="https://www.youngla.com/cdn/shop/files/5024_purple-wash_001_03_13_deek_ecomm.jpg?v=1741806599&width=600" class="d-block w-100" alt="...">
+                                    <a href="details.html"><img src="https://www.youngla.com/cdn/shop/files/5024_purple-wash_001_03_13_deek_ecomm.jpg?v=1741806599&width=600" class="d-block w-100" alt="..."></a>
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="https://www.youngla.com/cdn/shop/files/5024_red-wash_001_03_13_deek_ecomm.jpg?v=1741806599&width=600" class="d-block w-100" alt="...">
+                                    <a href="details.html"><img src="https://www.youngla.com/cdn/shop/files/5024_red-wash_001_03_13_deek_ecomm.jpg?v=1741806599&width=600" class="d-block w-100" alt="..."></a>
                                 </div>
                             </div>
                             <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -60,16 +60,16 @@ const productContainer = document.getElementById("product-container");
                         <div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="https://www.youngla.com/cdn/shop/files/1009_black-wash_003_03_13_rudy_ecomm_60a4fd92-f97b-4119-b976-a7281caa0ee6.jpg?v=1741824354&width=600" class="d-block w-100" alt="...">
+                                    <a href="details.html"><img src="https://www.youngla.com/cdn/shop/files/1009_black-wash_003_03_13_rudy_ecomm_60a4fd92-f97b-4119-b976-a7281caa0ee6.jpg?v=1741824354&width=600" class="d-block w-100" alt="..."></a>
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="https://www.youngla.com/cdn/shop/files/1009_olive-wash_002_03_13_rudy_ecomm.jpg?v=1741805813&width=600" class="d-block w-100" alt="...">
+                                    <a href="details.html"><img src="https://www.youngla.com/cdn/shop/files/1009_olive-wash_002_03_13_rudy_ecomm.jpg?v=1741805813&width=600" class="d-block w-100" alt="..."></a>
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="https://www.youngla.com/cdn/shop/files/1009_purple-wash_002_03_13_rudy_ecomm.jpg?v=1741805813&width=600" class="d-block w-100" alt="...">
+                                    <a href="details.html"><img src="https://www.youngla.com/cdn/shop/files/1009_purple-wash_002_03_13_rudy_ecomm.jpg?v=1741805813&width=600" class="d-block w-100" alt="..."></a>
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="https://www.youngla.com/cdn/shop/files/1009_red-wash_002_03_13_rudy_ecomm.jpg?v=1741805813&width=600" class="d-block w-100" alt="...">
+                                    <a href="details.html"><img src="https://www.youngla.com/cdn/shop/files/1009_red-wash_002_03_13_rudy_ecomm.jpg?v=1741805813&width=600" class="d-block w-100" alt="..."></a>
                                 </div>
                             </div>
                             <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
